@@ -1,20 +1,19 @@
-  <template>
-    <RegistrationComp/>
+<template>
+    <NavBarCom/>
     <studentsTableComp/>
-  </template>
+</template>
   
   <script>
   import 'bootstrap/dist/css/bootstrap.css';
   import 'bootstrap';
 
 
-
-  import RegistrationComp from './components/RegistrationComp.vue';
-  import studentsTableComp from './components/studentsTableComp.vue';
+  import NavBarCom from '../components/NavBarCom.vue';
+  import studentsTableComp from '../components/studentsTableComp.vue';
 
   export default {
     name: 'App',
-    components: {RegistrationComp, studentsTableComp},
+    components: {NavBarCom,studentsTableComp},
 
   }
   </script>

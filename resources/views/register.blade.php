@@ -6,7 +6,7 @@
 
         <title>Laravel</title>
 
-        @vite('resources/js/js/app.js')
+        @vite('resources/js/js/register.js')
 
         <!-- Styles -->
         <style>
