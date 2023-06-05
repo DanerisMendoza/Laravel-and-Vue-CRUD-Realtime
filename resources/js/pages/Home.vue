@@ -1,4 +1,5 @@
 <template>
+    <Navbar/>
     <h1>Home or all components</h1>
     <RegistrationComp/>
     <studentsTableComp/>

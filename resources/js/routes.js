@@ -4,6 +4,10 @@ import Students from './pages/Students.vue';
 
 const routes = [
   {
+    path: '/',
+    redirect: { name: 'home' } // Redirect to the named route
+  },
+  {
     path: '/home',
     name: 'home',
     component: Home
