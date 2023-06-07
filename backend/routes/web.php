@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Events\Hello;
+use App\Events\DbChange;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,8 @@ Route::get('/', function () {
 
 Route::get('/broadcast', function () {
     broadcast(new Hello());
+});
+
+Route::get('/DbChange', function () {
+    broadcast(new DbChange());
 });

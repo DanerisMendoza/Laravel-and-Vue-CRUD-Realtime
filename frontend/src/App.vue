@@ -16,6 +16,10 @@ export default {
     window.Echo.channel('channel').listen('Hello',(e) => {
       console.log(e);
     });
+
+    window.Echo.channel('channel-DbChange').listen('DbChange',(e) => {
+      console.log(e);
+    });
   }
 }
 </script>

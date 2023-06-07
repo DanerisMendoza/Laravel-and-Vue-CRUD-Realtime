@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student; 
+use App\Events\DbChange;
 
 /** 
 *@OA\Info(
@@ -325,6 +326,7 @@ class ApiController extends Controller
         $students->email = $request->input('email');
         $students->password = $request->input('password');
         $students->save();
+        broadcast(new DbChange());
         return response()->json($students);
     }
 
