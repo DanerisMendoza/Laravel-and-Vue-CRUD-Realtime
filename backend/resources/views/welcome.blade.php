@@ -6,13 +6,10 @@
 
         <title>Laravel</title>
 
-        @vite('resources/js/app.js')
-
         <!-- Styles -->
         <style>
         </style>
     </head>
-    <body id="app">
-        <App></App>
+    <body class="antialiased">
     </body>
 </html>
